@@ -1,0 +1,251 @@
+html{
+    box-sizing:border-box;
+    height: 100%;
+  }
+  
+  body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: sans-serif;
+  }
+  
+  *,*::after,*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+  
+  ul{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  li{
+    list-style-type: none;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  input{
+    background: #FFFFFF;
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    color: #fff;
+  }
+  
+  p{
+    font-size: 14px;
+    font-family: 'Roboto';
+    line-height: 16px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    text-transform: uppercase;  
+  }
+  
+  .container{
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+    max-width: 448px;
+    padding: 0 10px;
+    margin: 20px auto;
+    border-radius: 10px;
+  }
+  
+  .title{
+    font-size: 24px;
+    line-height: 28px;
+  }
+  
+  .text{
+    font-size: 16px;
+    line-height: 19px;
+    font-style: normal;
+    padding: 32px 0;
+  }
+  
+  .input-animal-title{
+    font-size: 14px;
+    line-height: 16px;
+    padding-bottom: 8px;
+  }
+  
+  .time-list{
+    text-align: center;
+    width: 425px;
+    margin-bottom: 16px;
+  }
+  
+  .time-item{
+    width: 50%;
+    transition: background-color .3s ease;
+  }
+  
+  .time-item:nth-child(1){
+      background-color: #2A8088;
+    border: 1px solid #333;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+  
+  .time-item:nth-child(2){
+    border: 1px solid #333;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  
+  .time-link{
+    display: inline-block;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    color: #000;
+  }
+  
+  
+  .time-item:hover{
+    background-color: #19707D;
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+    transition: background-color .3s ease;
+  }
+  
+  .time-item:hover .time-link{
+    color: #fff;
+  }
+  
+  .money-link{
+    color: #fff;
+    display: inline-block;
+    padding: 18px 28px;
+    border-radius: 10px;
+    background-color: #19707D;
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+    transition: transform .3s ease;
+  }
+  
+  .money-item:hover{
+    transition: transform .3s ease;
+    transform: scale(1.1);
+  }
+  
+  .paymet{
+    margin-top: 25px;
+  }
+  
+  .paymet-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .credit-card{
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .credit-card:before{
+    position: absolute;
+    left: 0;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url("./../img/Credit\ Card.svg");
+    
+  }
+  
+  .credit-card-input, .input-vard-data, .input-vard-cvc{
+    border-radius: 0;
+    color: #000;
+    padding-left: 35px
+  }
+  .input-vard-data{
+      font-size: 7pt;
+  }
+
+  .send-button{
+    width: 100%;
+    padding: 15px 0;
+    text-transform: uppercase;
+    color: #fff;
+    border:none;
+    overflow: none;
+    font-size: 18px;
+    line-height: 24px;
+    background: #2A8088;
+    box-shadow: 0px 2px 20px rgba(185, 213, 217, 0.6);
+    border-radius: 100px;
+    margin-top: 24px;
+  }
+  .checkbox-icon{
+      
+      height: 30px;
+      width: 400px;
+      position: relative;
+      margin: 10px auto;
+      display: flex;
+      align-items: center;
+     
+      
+  }
+  .checkbox-icon:before{
+    left: 3px;
+    top: -8px;
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url("./../img/top.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    
+  }
+  input[type="checkbox"]{
+      appearance: none;
+      -webkit-appearance: none;
+      height: 20px;
+      width: 25px;
+      background-color: #2A8088;
+      border-radius: 5px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      outline: none;
+  }
+  label{
+      color: black;
+      font-size: 10pt;
+      cursor: pointer;
+      padding-left: 20px;
+  }
+  input[type="checkbox"]::after{
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f00c";
+      font-size: 9pt;
+      padding-right: 10px;
+      color: white;
+      display: none;
+  }
+  input[type="checkbox"]:hover{
+      background-color: #2A8088;
+  }
+  input[type="checkbox"]:checked{
+      background-color: #2A8088;
+  }
+  input[type="checkbox"]:checked::after{
+      display: block;
+  }
+
+
+  
+ 
+  
