@@ -188,7 +188,8 @@ html{
       height: 30px;
       width: 400px;
       position: relative;
-      margin: 10px auto;
+      margin: 15px auto;
+      margin-bottom: 30px;
       display: flex;
       align-items: center;
      
